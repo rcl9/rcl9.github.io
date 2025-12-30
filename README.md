@@ -4,7 +4,7 @@
 <img src="/Images/Rob's Retro-Computing Archive.jpg">
 </p>
 
-<p>This is the main landing page for *Rob's1970's and 1980's Retro Computing Archive* site on <a href="https://github.com/rcl9">GitHub</a> and its various repositories:
+<p>This is the main landing page for <i>Rob's1970's and 1980's Retro-Computing Archive</i> site on <a href="https://github.com/rcl9">GitHub</a> and its various repositories:
 
 <b> <a href="https://github.com/rcl9/Imagery-of-Past-Projects">Imagery of Past Projects</b>
 
