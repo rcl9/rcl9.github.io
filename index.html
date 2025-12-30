@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rob's Retro-Computing Archive</title>
-<style>
+    <style>
+        /* 1. Reset everything to be sure */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #000000;
             margin: 0;
             padding: 0;
-            color: white;
-            font-family: Helvetica;
-            line-height: 1.6; /* Improves readability */
+            color: #ffffff;
+            font-family: sans-serif;
         }
 
-        .header-image {
+        /* 2. Image spans full width of the screen */
+        .full-width-img {
             width: 100%;
-            display: block;
             height: auto;
+            display: block;
         }
 
-        /* This container keeps your text from hitting the very edge of the screen */
-        .container {
-            max-width: 800px;  /* The width of your text column */
-            margin: 0 auto;    /* This centers the column itself */
-            padding: 40px 20px; /* Space inside the column so text doesn't touch the phone screen edges */
-            text-align: left;  /* Keeps the actual words left-aligned */
+        /* 3. The constrained text box */
+        .main-content {
+            display: block;      /* Ensure it acts as a block */
+            width: 90%;          /* Uses 90% of screen on mobile */
+            max-width: 800px;    /* Stops growing at 800px */
+            margin-left: auto;   /* Center magic */
+            margin-right: auto;  /* Center magic */
+            padding: 40px 0;     /* Top and bottom spacing */
+            text-align: left;    /* Keep words on the left */
             
-            /* Optional: Uncomment the line below to see the "box" while testing */
-            border: 1px solid #333;
+            /* Visual aid: remove this line once it works! */
+            background-color: #1a1a1a; 
         }
 
-        /* Link Styling */
-        a, a:visited {
-            color: #4da6ff;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            color: white;
-        }
+        a, a:visited { color: #4da6ff; }
     </style>
 </head>
 <body>
 
+<div class="main-content">
+        <h1>Testing the Width</h1>
+        <p>If this text is still hitting the edges of your browser, there might be a caching issue. Try opening the page in an "Incognito" or "Private" window.</p>
+        <p>On a laptop, you should see black "empty" space on the left and right of this grey box.</p>
+    </div>
+    
 <center>
 <img src="/Images/Rob's Retro-Computing Archive.jpg">
 </center>
@@ -102,6 +108,7 @@ This repository contains 15 Roland JX8P synthesizer patch banks, with up to 16 v
 
 </body>
 </html>
+
 
 
 
