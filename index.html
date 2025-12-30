@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rob's Retro-Computing Archive</title>
-    <style>
-        /* Sets the background to black and removes default margins */
+<style>
         body {
             background-color: #000000;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: white; /* Makes any text you add visible */
+            color: white;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            /* Removed flex centering from here */
         }
 
-        /* Styles the image container */
         .header-image {
             width: 100%;
-            max-width: 800px; /* Limits how wide the image gets on desktop */
-            height: auto;
             display: block;
+            height: auto;
         }
 
+        /* This container keeps your text from hitting the very edge of the screen */
         .content {
-            padding: 20px;
-            text-align: center;
+            max-width: 800px; /* Limits width so text isn't too long to read */
+            margin: 0 auto;   /* Centers the container itself, but not the text inside */
+            padding: 40px 20px;
+            text-align: left; /* Forces text to the left */
+        }
+
+        /* Link Styling */
+        a, a:visited {
+            color: #4da6ff;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: white;
         }
     </style>
 </head>
@@ -91,4 +99,5 @@ You can reach me at [RetroComputingArchive@gmail.com](mailto:RetroComputingArchi
 
 </body>
 </html>
+
 
