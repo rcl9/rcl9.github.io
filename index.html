@@ -127,9 +127,7 @@ h1 {
 <td>
 <b> <a href="https://github.com/rcl9/MultiFlex-Z80-H19-Terminal-Emulation-ROMs">New H19/VT52 firmware support for the Multiflex Video Display Terminal Kit of the 1982 era (3 ROM images)</a></b>
 
-<p>This repository contains new firmware for the Multiflex Z80 Video Display Terminal Kit (previously sold by Exceltronix of Toronto Canada in 1984) which adds a plethora
-of new features and functionality, including new H19/VT52 terminal emulation support. The original stock firmware which came with the terminal was quite primitive at best, only providing very 
-basic text sending and receiving functionality. 
+<p>This repository contains new firmware & related Z80 source code for the Multiflex Z80 Video Display Terminal Kit (previously sold by Exceltronix of Toronto Canada in 1984) which adds a plethora of new features and functionality, including new H19/VT52 terminal emulation support. The original stock firmware which came with the terminal in the early 1980s was quite primitive at best, only providing very basic text sending and receiving functionality. 
 </td>
 </tr>
 </table>
@@ -145,6 +143,8 @@ basic text sending and receiving functionality.
 <b> <a href="https://github.com/rcl9/Colossus_Control_Computer">The 'Colossus Control Computer' -- A Beast of a Z80 Machine!</a></b>
 
 <p> This repository documents my "Colossus Control Computer" which was my main go-to development machine ("It has every feature including the kitchen sink") that was started in March 1985. I call it a "beast of a Z80 machine" because it has more odds and ends + add-on gadgets than with most self-built computers. It was also the test bed and development platform for my follow-on March 1987 "Phoenix MIDI Computer". An interesting sub-project for Colossus was my Dec 1985 'Drum Pad Triggers for a MIDI Drum Machine'.
+
+<p> The repository also contains the schematics and Z80 assembly source code to: (1) my Z80 custom monitor, (2) an extensive Votrax SC-01 speech synthesizer driver & 'text to speech' converter, (3) a Hitachi EA-Y80025AT and extensive driver (2 line x 80 character - super rare for the early 1980s!) LCD driver, (4) the game of 'Simon' for my corresponding hardware device,  (5) a slimmed down version of the XMODEM protocol for inclusion into the monitor ROM and (6) a very simple D/A music waveform generator.
 </td>
 </tr>
 </table>
@@ -159,7 +159,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/MIDI_Drum_Pad_Triggers">'Drum Pad Triggering System' for MIDI Usage - 1985</a></b>
 
-<p>This repository documents a sub-project I designed and built in December 1985 to simulate SIMMONS electronic drum pads, "on the cheap" ($20 in parts compared to $1500). The intent was to design a physical drum pad interface that would provide digital triggers to my then-new Colossus Computer Computer which itself would create MIDI messages for a Roland TR-707 drum machine.
+<p>This repository documents a sub-project I designed and built in December 1985 to simulate SIMMONS electronic drum pads, "on the cheap" ($20 in parts compared to $1500). The intent was to design a physical drum pad interface that would provide digital triggers to my then-new Colossus Computer Computer which itself would create MIDI messages for a Roland TR-707 drum machine. Schematics and "piezo drum trigger analysis" charts are provided for those considering to build their own similar mechanisms. 
 </td>
 </tr>
 </table>
@@ -174,7 +174,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Cypher-Z80-68000-Single-Board-Computer-1984-by-Motel-Computers---History-and-Documentation">Cypher Z80/68000 Single Board Computer (of the 1984 era)</a></b>
 
-<p>This repository strives to provide a historical snapshot, archive and description of the short lived Cypher Z80/68000 single board computer which was designed, built and sold by Motel Computers of Willowdale Ontario.
+<p>This repository strives to provide a historical snapshot, archive and description of the short lived Cypher Z80/68000 single board computer which was designed, built and sold by the Toronto Canada based Motel Computers of Willowdale Ontario. Tech manuals, schematics, historical advertisements and a history of Motel Computers is provided. 
 </td>
 </tr>
 </table>
@@ -204,7 +204,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Cypher-Z80-68000-Single-Board-Computer----Expansion-Board">Parallel I/O, SASI Controller and R-Bus Interfaces Expansion Board for the Cypher Z80/68k SBC</a></b>
 
-<p>This repository documents the hardware expansion board that I had designed and built for the Motel Computers Cypher Z80/68000 SBC in 1986.
+<p>This repository documents the hardware expansion board that I had designed and built for the Motel Computers Cypher Z80/68000 SBC in 1986. This includes schematics for a "Universal I/O Parallel Port", a SASI hard disk controller interface and a SCSI bus interface. 
 </td>
 </tr>
 </table>
@@ -234,7 +234,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/EmuProm--Universal-EPROM-Emulator">EmuProm -- A Universal EPROM Emulator for 2716, 2732, 2764, 27128 and 27256</a></b>
 
-<p> This repository documents a universal EPROM plug-in emulator which I designed and built in July 1985.
+<p> This repository documents a universal EPROM plug-in emulator which I designed and built in July 1985, including the schematics and Z80 driver code. 
 </td>
 </tr>
 </table>
@@ -264,7 +264,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/ZAP-A-PAL-Programmer">ZAP-A-PAL Programmer - A Variation on a 1987-era PAL Programmer</a></b>
 
-<p> This repository documents a variation of the ZAP-A-PAL programmer that I designed from May 1987. 
+<p> This repository documents a variation of the ZAP-A-PAL programmer that I designed and built in May 1987, including the schematics and C + Z80 user interface code. 
 </td>
 </tr>
 </table>
@@ -275,6 +275,21 @@ basic text sending and receiving functionality.
 <br>
 <p><h2> CP/M and/or S-100 Bus Related Technical Articles </h2>
 <br>
+
+<! --- How to Create Mixed-Mode Geometry CP/M Boot Disks From Scratch in IMG, IMD and HFE File Formats--->
+	
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/make_cpm_boot_disk128.webp" alt=""></td>
+<td>
+<b><a href="https://github.com/rcl9/How-to-Create-CPM-Boot-Disks-From-Scratch-in-IMG--IMD-and-HFE-File-Formats">How to Create Mixed-Mode Geometry CP/M Boot Disks From Scratch in IMG, IMD and HFE File Formats</a></b>
+
+<p> This important repository explains in detail how to create CP/M boot disks from scratch in the IMG, IMD and HFE file formats from a collection of files on a PC computer. In particular it handles the case of "mixed-mode track geometry" whereby track 0 is in single density (FM) and tracks 1+ are in double density (MFM). For this tutorial the target is the Morrow DiskJockey 2D disk controller (attached to a HxC 8" floppy disk emulator) on an Exidy Sorcerer computer with an S-100 expansion bus. The provided script will also insert from a number of provided system boot images for this hardware setup. The series of documented operations were quite tricky to get working over a period of two months. 
+</td>
+</tr>
+</table>
+</div>	
 
 <! --- Running CPM3 of HxC Emulator --->
 	
@@ -315,7 +330,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Integration-of-the-1983-DRC-Light-Speed-100-RAMdisk-S100-Board-With-Exidy-Sorcerer-CPM-2.2">Integration of the 1983-era DRC 'Light Speed 100 RAMdisk' S-100 board with the Exidy Sorcerer + CP/M 2.2</a></b>
 
-<p> This repository provides a historical and archival overview of the 1983-era "Light Speed 100" (LS-100) 256k S-100 RAMdisk board produced by Digital Research Computers. This archive also provides a custom BIOS which tightly integrates the card as a virtual floppy disk drive for the Exidy Sorcerer computer running CP/M 2.2 with the Morrow Disk Jockey 2D S-100 controller card.
+<p> This repository provides a historical and archival overview of the 1983-era "Light Speed 100" (LS-100) 256k S-100 RAMdisk board produced by Digital Research Computers. This archive also provides a custom BIOS which tightly integrates the card as a virtual floppy disk drive for the Exidy Sorcerer computer running CP/M 2.2 with the Morrow Disk Jockey 2D S-100 controller card. Beyond this archive there is little online information about this card and no orignal runtime software or source code. 
 </td>
 </tr>
 </table>
@@ -332,7 +347,7 @@ basic text sending and receiving functionality.
 
 <p>This repository captures  my experience with retrieving and archiving early 1980's Exidy Sorcerer data tapes and directly converting them to binary, Exidy Sorcerer .tape format and a related de-blocked text files using the <a href="https://www.toptensoftware.com/tapetool">TapeTool2</a> utility program. If I had access to this repo before starting my project then it woud have saved me a good day or two of head banging and head scratching. 
 
-<p>However, much more importantly for an Exidy Sorcerer user (or other retro-computer enthusiasts) reading this tutorial, I provide a well defined batch script file named "convert.bat" which will quickly convert an Exidy Sorcerer 300 or 1200 baud .wav file into a corresponding binary (for CP/M usage) and .tape file (for jSorcerer or MAME usage). Other sites on the Internet often provide dozens of 1980s software downloads in .wav audio file format but no simple method to convert them into runnable files for the Sorcerer. 
+<p>However, much more importantly for an Exidy Sorcerer user (or other retro-computer enthusiasts) reading this tutorial, I provide a well defined batch script file named "convert.bat" which will quickly convert a 300 or 1200 baud .wav file into a corresponding binary (for CP/M usage) and .tape file (for jSorcerer or MAME usage). Other sites on the Internet often provide dozens of 1980s software downloads in .wav audio file format but no simple method to convert them into runnable files for the Sorcerer. 
 </td>
 </tr>
 </table>
@@ -368,7 +383,65 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Exidy-Sorcerer-New-Power-Supply">How to Modernize the Exidy Sorcerer's Linear Power Supply</a></b>
 
-<p> This repository provides a photo tutorial about how to replace the original Exidy Sorcerer's (version 1) linear power supply with a modern switched mode supply, hidden within the original case. 
+<p> This repository provides a photo tutorial about how to replace the original Exidy Sorcerer's (version 1) linear power supply with a modern switched mode supply, hidden within the original case. This is a relatively tricky procedure to implement. 
+</tr>
+</table>
+</div>
+
+<! --- TRS-80 BASIC on the Sorcerer --->
+
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/Shooting-Gallery 128.webp.webp" alt=""></td>
+<td>
+<b><a href="https://github.com/rcl9/Sorc-80--How-To-Run-TRS80-BASIC-Programs-Natively-On-The-Exidy-Sorcerer">"Sorc-80" - How To Run TRS-80 BASIC Programs Natively On The Exidy Sorcerer</a></b>
+
+This repository explains and documents how I ported the actual Tandy TRS-80 Model I "Level II BASIC" (in 1981-83) so that .trs BASIC files could be run "out of the box" on the Exidy Sorcerer computer with little or no modifications. It is not an emulator but rather the real 12k BASIC-in-ROM running on the Sorcerer. A fully operational system + example TRS-80 .trs BASIC programs are being provided in this repo so that you can run the same code today on a real Exidy Sorcerer (incl. with CP/M 2.2) and/or within the MAME emulator running the Dreamdisk CP/M 2.2 system. 
+</tr>
+</table>
+</div>
+
+<! --- Porting TRS-80 ML Programs to the Sorcerer --->
+
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/Android-Nim.webp" alt=""></td>
+<td>
+<b><a href="https://github.com/rcl9/Sorc-80--How-To-Run-TRS80-Machine-Language-Programs-Natively-On-The-Exidy-Sorcerer">Sorc-80 - How To Run TRS-80 Machine Language Programs Natively On The Exidy Sorcerer</a></b>
+
+This repository seeks to document my 1981-era method of porting TRS-80 Model I machine language software (namely games) over to the Exidy Sorcerer computer. In essense it is a fairly simple process when presented properly.  It also provides a hardware level modification to the Sorcerer. 
+</tr>
+</table>
+</div>
+
+<! --- PacBasic with Disk IO --->
+
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/Hangman1.webp" alt=""></td>
+<td>
+<b><a href="https://github.com/rcl9/Exidy-Sorcerer-8k-PacBasic-With-New-CPM-Disk-IO-and-Large-Legacy-BASIC-Program-Collection">Exidy Sorcerer 8k PacBasic With New CP/M Disk IO and Large (180 File) Legacy BASIC Program Collection</a></b>
+
+This repository was created to "market" or make more people aware of my customized "PacBasic" work of 1981 which added CP/M disk I/O commands to the stock Exidy Sorcerer 8k BASIC-in-ROM. To this very day retro-computing people still struggle to run Rom-Pac 8k BASIC programs on their real or emulated Exidy Sorcerer machines by way of data cassette file loading. It only took 45+ years to get this into the hands of the retro-computing community.
+
+It also provides my personal curated and notarized collection of 182 Exidy 8k BASIC programs from the ~1979 to ~1982 era which run under the PacBasic.com program. I had typed these programs in books and magazines, ported them from the PET computer, ported them from the TRS-80 computer or written them myself. 
+</tr>
+</table>
+</div>
+
+<! --- MAME + CPM + Dreamdisk for the Sorcerer --->
+
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/Dreamdisk.webp" alt=""></td>
+<td>
+<b><a href="https://github.com/rcl9/How-to Set-Up-the-MAME-Emulator-for-the-Exidy-Sorcerer-Running-Dreamdisk-CPM">How to Set up the MAME Emulator for the Exidy Sorcerer Running Dreamdisk CP/M 2.2</a></b>
+
+This repository encapsulates my personal experience and notes as how to set up the well known MAME emulator for the Exidy Sorcerer and the Dreamdisk floppy disk system running CP/M 2.2 (and some info about how to do the same for the Exidy Micropolis FDC). It will also explain how to transfer files from a PC computer to a MAME .mfi CP/M disk image (and back again) with ease. I wish I had access to this tutorial from the get-go as it would have saved me a fair bit of time to figure out these finer details.
 </tr>
 </table>
 </div>
@@ -434,7 +507,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/History-Of-The-BASEX-Compiler-from-the-1979-Era">History of 8080-Z80 BASEX Compiler from the 1979 Era</a></b>
 
-<p> This repository  acts as a tribute and time capsule to the long lost BASEX compiler of the 1979 era of early computing written by Paul K. Warme as a faster byte-code interpreted version of BASIC that ran on the 8080 and Z80 platforms. This history came about from my work to resurrect the complete runtime environment and development history of my Exidy Sorcerer "Space Invaders" game of 1980-81, written in BASEX.
+<p> This repository  acts as a tribute and time capsule to the long lost BASEX compiler of the 1979 era of early computing written by Paul K. Warme (retired accountant from State College, PA) as a faster byte-code interpreted version of BASIC that ran on the 8080 and Z80 platforms. This history came about from my work to resurrect the complete runtime environment and development history of my Exidy Sorcerer "Space Invaders" game of 1980-81, written in BASEX.
 </tr>
 </table>
 </div>
@@ -448,7 +521,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Commodore-PET-Computer-Educational-Software-From-1982">Grades 9-12 Educational Math Programs for the Commodore PET - Written by RCL9 in 1982</a></b>
 
-<p> This repository documents the source code and related visual screen snapshots to a number of grades 9-12 educational math programs I wrote for the Commodore PET computer in 1982. At the time I was more of an Exidy Sorcerer + CP/M 2.2 sort of person but I was still well versed in PET programming, 6502 PET binary program reverse engineering, etc. 
+<p> This repository documents the source code and related visual screen snapshots to a number of grades 9-12 educational math programs I wrote for the Commodore PET computer in 1982. At the time I was more of an Exidy Sorcerer + CP/M 2.2 sort of person but I was still well versed in PET programming, 6502 PET binary program reverse engineering, TRS-80 programming, etc. 
 </td>
 </tr>
 </table>
@@ -464,7 +537,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/LEGO-Technic-MissileBot-Robot">The 'Missile-Bot Commando' Robot (LEGO Technic + HandyBoard SBC + Two Wii Controllers) from 2010</a></b>
 
-<p> This repository documents the 'Missile-Bot Commando' robot based on LEGO Technic, a 6811 HandyBoard SBC, two Wii controllers, Bluetooth + RS-232 communications and a Windows host controller computer. 
+<p> This repository documents the unique and custom build of the 'Missile-Bot Commando' robot based on LEGO Technic, a 6811 HandyBoard SBC, two Wii controllers, Bluetooth + RS-232 communications and a Windows host controller computer. 
 </td>
 </tr>
 </table>
@@ -481,7 +554,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/LEGO-Robotic-Surveillance-Garbage-Can">The Robotic 'Surveillance Garbage Can' using a HandyBoard SBC - From 2009</a></b>
 
-<p> This repository documents the evolution and development of a flip-up 'Surveillance Garbage Can' based on a 6811 HandyBoard SBC and various LEGO Technic motors and related pieces. 
+<p> This repository documents the evolution and custom development build of a flip-up 'Surveillance Garbage Can' based on a 6811 HandyBoard SBC and various LEGO Technic motors and related pieces. 
 </td>
 </tr>
 </table>
@@ -518,9 +591,7 @@ basic text sending and receiving functionality.
 <td>
 <b><a href="https://github.com/rcl9/Roland-JX8P-Synthesizer-Memory-Cartridges">Memory Cartridges for the Roland JX8P Synthesizer (from 1985)</a></b>
 
-<p> This repository documents two designs for a programmable RAM cartridge for the Roland JX8P synthesizer which I had designed and built in late 1985. Prior to this 
-design my only option would have been to buy an expensive Roland MC-16C Memory Cartridge which held just 16 patches. With my new design, the single plug-in cartridge 
-could handle 256 patches and be programmed by an external computer.
+<p> This repository documents two designs for a programmable RAM cartridge for the Roland JX8P synthesizer which I had designed and built in late 1985. Prior to this design my only option would have been to buy an expensive Roland MC-16C Memory Cartridge which held just 16 patches. With my new design, the single plug-in cartridge could handle 256 patches and be programmed by an external computer such as the special cartridge slot I designed into my <a href="https://github.com/rcl9/Colossus_Control_Computer">Colossus Control Computer</a>.
 </td>
 </tr>
 </table>
