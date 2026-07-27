@@ -414,6 +414,8 @@ h1 {
 <b><a href="https://github.com/rcl9/Sorc-80--How-To-Run-TRS80-BASIC-Programs-Natively-On-The-Exidy-Sorcerer">"Sorc-80" - How To Run TRS-80 BASIC Programs Natively On The Exidy Sorcerer</a></b>
 
 <p>This repository explains and documents how I ported the actual Tandy TRS-80 Model I "Level II BASIC" (in 1981-83) so that .trs BASIC files could be run "out of the box" on the Exidy Sorcerer computer with little or no modifications. It is not an emulator but rather the real 12k BASIC-in-ROM running on the Sorcerer. A fully operational system + example TRS-80 .trs BASIC programs are being provided in this repo so that you can run the same code today on a real Exidy Sorcerer (incl. with CP/M 2.2) and/or within the MAME emulator running the Dreamdisk CP/M 2.2 system. 
+
+<p> This was not a simple 1:1 "port". The most useful addition was the inclusion of the DIR, DLOAD and DSAVE commands which provide CP/M disk support to view a disk directory, load in a .trs BASIC file or save out to a .trs BASIC file.  14 new or modified commands were also added: APPEND, CALL(x), CLOAD, CSAVE, INKEY$, KEY, OLD, PADL(x), PEEK(x), POKE(x), SET/RESET, SOUND(x) and TEXT(x). The development, coding and debugging was done entirely by hand (back in the day) on lined paper in machine language and using a hex editor. It took years of effort and fiddling.
 </tr>
 </table>
 </div>
