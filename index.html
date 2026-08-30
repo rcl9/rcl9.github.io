@@ -112,7 +112,7 @@ h1 {
 <div class = "box-with-shadow2">
 <table>
 <tr><td>
-<img src="Thumbnails/project_images.jpg" alt=""></td>
+<img src="Thumbnails/RadioElectronics_128.webp" alt=""></td>
 <td><b><a href="https://github.com/rcl9/Imagery-of-Past-Projects">Imagery of Past Projects</a></b>
 
 <p>This repository contains a snapshot of some of my more interesting projects from the 1970's to late 1980's which I can say that I had actually built myself. I do have other interesting hardware projects but some of them were not built by me originally. This will provide you with a bit more visual context as to what type and extent of projects I used to build before getting distracted with a professional career in similar activities. Almost all of these documented projects are from the first 24 years of my life. You may also be interested to read over my <a href="https://github.com/rcl9/Imagery-of-Past-Projects/blob/main/Where%20It%20All%20Started/Readme.md">Where and How Did it all Start?</a> section and its associated photo montages.
@@ -148,6 +148,36 @@ h1 {
 <p> This repository documents my "Colossus Control Computer" which was my main go-to development machine ("It has every feature including the kitchen sink") that was started in March 1985. I call it a "beast of a Z80 machine" because it has more odds and ends + add-on gadgets than with most self-built computers. It was also the test bed and development platform for my follow-on March 1987 "Phoenix MIDI Computer". An interesting sub-project for Colossus was my Dec 1985 'Drum Pad Triggers for a MIDI Drum Machine'.
 
 <p> The repository also contains the schematics and Z80 assembly source code to: (1) my Z80 custom monitor, (2) an extensive Votrax SC-01 speech synthesizer driver & 'text to speech' converter, (3) a Hitachi EA-Y80025AT and extensive driver (2 line x 80 character - super rare for the early 1980s!) LCD driver, (4) the game of 'Simon' for my corresponding hardware device,  (5) a slimmed down version of the XMODEM protocol for inclusion into the monitor ROM and (6) a very simple D/A music waveform generator.
+</td>
+</tr>
+</table>
+</div>
+
+<! --- Phoenix MIDI Processor --->
+
+<div class = "box-with-shadow2">
+<table>
+<tr><td>
+<img src="Thumbnails/project_images.jpg" alt=""></td>
+<td><b><a href="https://github.com/rcl9/Phoenix_MIDI_Computer">The Phoenix MIDI Processor Computer (March 1987)</a></b>
+
+<p>This repository documents my Z80-based "Phoenix MIDI Processor Computer" which is the successor and more refined version of my 1985-era <a href="https://github.com/rcl9/Colossus_Control_Computer">Colossus Control Computer</a> (1985-1987). The presented material can be useful as a teaching aid for:
+
+<ul>
+<li> Learning how to integrate low-level Z80 assembler code along with Aztec C high-level code, all within a static ROM.
+<li> Learning how to design and build a MIDI-centric data processing system, including the usage of its well tested interrupt and queue driven MIDI/RS-232 buffering mechanisms.
+<li> Learning how to write real time MIDI processing C-code routines supported by a lower level Z80 framework.
+<li> Learning how to use a LCD interface & keypad for restricted user interface interactions.
+</ul>
+
+<p> The full intent and focus of this custom computer was to act as a "MIDI stream processor" which has these basic processing capabilities (written in Aztec C code):
+
+<ul>
+<li> Real time MIDI data analyzer with filtering
+<li> Display active MIDI channels
+<li> Display highest and lowest notes of each MIDI channel
+<li> Casio CZ-series, Roland TR-707 drum machine & Yamaha Tx-81Z patch librarian
+</ul>
 </td>
 </tr>
 </table>
