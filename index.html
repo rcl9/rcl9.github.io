@@ -150,6 +150,21 @@ h1 {
 <p> This repository documents my "Colossus Control Computer" which was my main go-to development machine ("It has every feature including the kitchen sink") that was started in March 1985. I call it a "beast of a Z80 machine" because it has more odds and ends + add-on gadgets than with most self-built computers. It was also the test bed and development platform for my follow-on March 1987 <a href="https://github.com/rcl9/Phoenix_MIDI_Computer">Phoenix MIDI Processor Computer</a>. An interesting sub-project for Colossus was my Dec 1985 <a href="https://github.com/rcl9/MIDI_Drum_Pad_Triggers">Drum Pad Triggers for a MIDI Drum Machine</a>.
 
 <p> The repository also contains the schematics and Z80 assembly source code to: (1) my Z80 custom monitor, (2) an extensive Votrax SC-01 speech synthesizer driver & 'text to speech' converter, (3) a Hitachi HD44780 LCD driver, (4) the game of 'Simon' for my corresponding hardware device,  (5) a slimmed down version of the XMODEM protocol for inclusion into the monitor ROM and (6) a very simple D/A music waveform generator.
+
+<p> For those wanting to build a Z80 computer, this repo can help teach you how to:
+
+- How to design, wire, scan and map an ASCII keyboard (using an Intel 8279 is a keyboard and display controller) + numeric keypad for data entry.
+- How to interface a Hitachi HD44780 LCD to the Z80 bus and provide data access.
+- How to design, build and drive an 8 segment LED display.
+- How to design, build and interface with 1MB of DRAM as 64k banked memory segments.
+- How to design, build and interface with a 58167 real time clock chip.
+- How to interace with a 8 channel, 8-bit multiplexed analog-to-digital converter based on the TI ADC0809.
+- How to interface the Votrax SC-01 speech synthesizer to the Z80 bus + drive it interactively with mapping tables.
+- How to build a WD2797-based floppy controller system + Z80 driver code.
+- How to create an interrupt and queue driven MIDI/RS-232 buffering mechanism based on the Z80 SIO chip.
+- How to do I/O port decoding using an Abel logic file for a PAL16L8.
+- How to interface to the Roland M-16C and M-64C synthesizer memory cartridges.
+- And additional design notes for the 8253 timer, Z80 CTC timer, Z80 PIO, 8255 PIO and 8253 baud rate generator.
 </td>
 </tr>
 </table>
@@ -360,6 +375,8 @@ h1 {
 <b><a href="https://github.com/rcl9/Breadboard_Prototyping_Station">Breadboard Protyping Station with Flexible Power Supply & Sampling Points (July 1987)</a></b>
 
 <p> By 1987 I was getting pretty good at making a professional looking product and hence came up with the idea of making a flexible breadboard prototyping station. This repository acts as another one of my "book ends" to justify the time and effort I took into making this device back in the day just in case it may inspire others to make something similar.
+
+<p> This repo also contains the only known copy of the Tabuchi Electronics (Japan) TR095 switched mode power supply schematics of the 1978 era. 
 </td>
 </tr>
 </table>
